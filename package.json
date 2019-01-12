@@ -1,0 +1,17 @@
+{
+  "name": "automota",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive",
+    "coverage": "nyc --reporter=html _mocha --recursive"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
