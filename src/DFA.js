@@ -11,12 +11,12 @@ class DFA {
     this.currentState=transitionOfCurrentState[givenAlphabet];
   }
 
-  doesAccept(string) {
-    if (string === ""){
+  doesAccept(givenString) {
+    if (givenString === ""){
       return this.acceptableStates.includes(this.currentState);
     }
-    this.nextState(string[0]);
-    return this.doesAccept(string.slice(1));
+    this.nextState(givenString[0]);
+    return this.doesAccept(givenString.slice(1));
   }
 
   clearState(){
